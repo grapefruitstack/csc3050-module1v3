@@ -6,6 +6,7 @@
     <title>My First Web Page</title>
 </head>
 <body>
+<<<<<<< Updated upstream
 <section>
     <h1>The Perfect Get Rich Quick Site!</h1>
     <p>Consider a page where instead of scrolling and clicking like the average person, you have to get through the whole page with a miniature figure. Jump on top of paragraphs like platforms, find your way through links to get to a goal, and keep an inventory of items collected!</p>
@@ -17,5 +18,81 @@
 		<li>???</li>
 		<li style="color: #bdb042;">PROFIT.</li>
 </section>
+=======
+
+	<script>
+		function makeItAppear(sectionID) {
+			document.getElementById(sectionID).style.display = "block";
+		}
+	</script>
+
+	<script>
+		function makeItAppearAfter(sectionID, delay) {
+			setTimeout(function () {
+				document.getElementById(sectionID).style.display = "block";
+			}, 1000);
+		}
+	</script>
+
+	<script>
+		function makeItAppearLonger(sectionID, delay) {
+			setTimeout(function () {
+				document.getElementById(sectionID).style.display = "block";
+			}, 2000);
+		}
+	</script>
+
+	<h3>Are you sick of being poor and broke!?</h3>
+
+	<button onclick="makeItAppear('FirstPart')" style="background-color: #bdb042; color: #291203; border-radius: 5px">
+		Yes! I am!
+	</button>
+
+	<section id="FirstPart" style="display: none;">
+		<h1>The Perfect Get Rich Quick Site!</h1>
+		<p>Consider a page where instead of scrolling and clicking like the average person, you have to get through the whole page with a miniature figure. Jump on top of paragraphs like platforms, find your way through links to get to a goal, and keep an inventory of items collected!</p>
+
+		<h2>The Steps to Easy Money</h2>
+		<ul>
+			<li>Find examples of <a href="https://github.com/adamhoward56/Platformer-Extension">similar projects</a> to get inspiration.</li>
+			<li>Consider building a separate site just for avatar inventory</li>
+			<li>???</li>
+			<li style="color: #bdb042;">✨PROFIT.✨</li>
+
+			<br>
+
+			<button onclick="makeItAppear('SecondPart')" style="background-color: #bdb042; color: #291203; border-radius: 5px">
+				Those "???"s are kind of concerning.. Can I ask about that?
+			</button>
+
+			<section id="SecondPart" style="display: none;">
+
+				<h3>Don't you think you're asking too many questions for a project that barely has its feet off the ground?</h3>
+				<p>You see, this idea is being pitched to you with the goals and aspirations of a <span style="font-size: 8;">kind of</span> young college student is trying their best! Didn't you know Mark Zuckerberg was 26 years old when he made Facebook! Don't <span onclick="makeItAppear('FactCheckedPart'); makeItAppearAfter('FactCheckFollowUp'); makeItAppearLonger('SorryButton')" style="color: #610a10; text-decoration: underline; cursor: pointer;"><b>fact check</b></span> that!</p>
+
+				<section id="FactCheckedPart" style="display: none;">
+
+					<h1 decoration: bold; style="font-size: 70px"> HEY!</h1>
+
+					<p id="FactCheckFollowUp" style="display: none;">
+						Who in the world told you to click that? I specifically said DON'T click that...
+					</p>
+
+					<button id="SorryButton" onclick="makeItAppear('ThirdPart')" style="background-color: #bdb042; color: #291203; border-radius: 5px; display:none;">
+						Sorry...
+					</button>
+
+					<section id="ThirdPart" style="display: none;">
+
+						<p>Now SCRAM. I've gotta go to sleep, it's already 1AM..</p>
+
+					</section>
+
+				</section>
+
+			</section>
+
+	</section>
+>>>>>>> Stashed changes
 </body>
 </html>
